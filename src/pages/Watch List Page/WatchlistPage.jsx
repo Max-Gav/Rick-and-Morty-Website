@@ -1,8 +1,8 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 import PageTitle from "../../components/shared/PageTitle";
-import AddEpisodeForm from "./WatchlistComponents/AddEpisodeForm";
-import WatchlistItem from "./WatchlistComponents/WatchlistItem/WatchlistItem";
+import AddEpisodeForm from "./Watchlist Page Components/AddEpisodeForm";
+import WatchlistItem from "./Watchlist Page Components/WatchlistItem/WatchlistItem";
 import useEpisodes from "./useEpisodes";
 
 

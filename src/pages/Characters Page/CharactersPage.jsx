@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { Container } from "react-bootstrap";
 import PageTitle from "../../components/shared/PageTitle";
-import CharacterCard from "./CharactersComponents/CharacterCard";
-import CharacterFilter from "./CharactersComponents/CharacterFilter/CharacterFilter";
-import CharactersPagination from "./CharactersComponents/CharactersPagination";
+import CharacterCard from "./Characters Page Components/CharacterCard";
+import CharacterFilter from "./Characters Page Components/CharacterFilter/CharacterFilter";
+import CharactersPagination from "./Characters Page Components/CharactersPagination";
 import useCharacters from "./useCharacters";
 
 const CharactersPage = () => {
