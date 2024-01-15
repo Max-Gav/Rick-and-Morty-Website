@@ -12,14 +12,19 @@ const useCharacters = () => {
 
   //Fetching the current page information and passing the results to the states
   useEffect(() => {
-    fetchData(paginationInfo.currPage).then((data) => {
-      setCharacters(data.results);
-      setPaginationInfo({
-        ...paginationInfo,
-        nextPage: data.info.next,
-        prevPage: data.info.prev,
+    fetchData(paginationInfo.currPage)
+      .then((data) => {
+        setCharacters(data.results);
+        setPaginationInfo({
+          ...paginationInfo,
+          nextPage: data.info.next,
+          prevPage: data.info.prev,
+        });
+      })
+      .catch((err) => {
+        console.log(err);
+        setCharacters([]);
       });
-    }).catch(err=>{console.log(err);});
   }, [paginationInfo.currPage]);
 
   return { characters, paginationInfo, setPaginationInfo };

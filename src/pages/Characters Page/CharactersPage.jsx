@@ -24,9 +24,9 @@ const CharactersPage = () => {
         setPaginationInfo={setPaginationInfo}
         setPageNum={setPageNum}
       />
-      {characters.map((character) => (
+      {characters.length != 0 ?characters.map((character) => (
         <CharacterCard character={character} key={character.id} />
-      ))}
+      )): <span className="fw-bold text-center fs-2 my-5">No results</span>}
     </Container>
   );
 };
